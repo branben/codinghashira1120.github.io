@@ -1,0 +1,294 @@
+.contain {  display: grid;
+    height: 100vh ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+  
+  .Character-List { grid-area: 4 / 1 / 6 / 11; }
+  
+  .Char-1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Name Name Name";
+    grid-area: 4 / 1 / 6 / 3;
+  }
+  
+  .Name { grid-area: Name; }
+  
+  .Char-2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Name-2 Name-2 Name-2";
+    grid-area: 4 / 3 / 6 / 5;
+  }
+  
+  .Name-2 { grid-area: Name-2; }
+  
+  .Char-3 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Name-3 Name-3 Name-3";
+    grid-area: 4 / 5 / 6 / 7;
+  }
+  
+  .Name-3 { grid-area: Name-3; }
+  
+  .Char-4 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Name-4 Name-4 Name-4";
+    grid-area: 4 / 7 / 6 / 9;
+  }
+  
+  .Name-4 { grid-area: Name-4; }
+  
+  .Char-5 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "Name-5 Name-5 Name-5";
+    grid-area: 4 / 9 / 6 / 11;
+  }
+  
+  .Name-5 { grid-area: Name-5; }
+  
+  .Hero-Sprite {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "Sprite-1 Sprite-1 Sprite-1"
+      "Sprite-1 Sprite-1 Sprite-1";
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  
+  .Sprite-1 { grid-area: Sprite-1; }
+  
+  .Villain-Sprite {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "Sprite-2 Sprite-2 Sprite-2";
+    grid-area: 2 / 9 / 4 / 11;
+  }
+  
+  .Sprite-2 { grid-area: Sprite-2; }
+  
+  .Title-Section-1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "Player-1-Health Player-1-Health Player-1-Health"
+      "Player-1-Health Player-1-Health Player-1-Health";
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  
+  .Player-1-Health { grid-area: Player-1-Health; }
+  
+  .Title-Section-2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "Player-2-Health Player-2-Health Player-2-Health"
+      "Player-2-Health Player-2-Health Player-2-Health";
+    grid-area: 1 / 6 / 2 / 11;
+  }
+  
+  .Player-2-Health { grid-area: Player-2-Health; }
+  
+  .Middle-Section {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Alignment-1 . Alignment-2"
+      ". Attack ."
+      ". Defend .";
+    grid-area: 2 / 3 / 4 / 9;
+  }
+  
+  .Alignment-1 { grid-area: Alignment-1; }
+  
+  .Alignment-2 { grid-area: Alignment-2; }
+  
+  .Attack { grid-area: Attack; }
+  
+  .Defend { grid-area: Defend; }
+  
+
+#yourHealth, #compHealth {
+	position: relative;
+	height: 30px;
+	width: 250px;
+	border: white 3px solid;
+	border-radius: 3px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+#yourHealthBar, #compHealthBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: lightgreen;
+}
+
+body {
+margin: 0px;
+}
+
+.name {
+    align-items: center;
+    display: flex ;
+    justify-content: center;
+    font-size: 35px;
+    
+}
+
+.hd {
+    display: none;
+}
+
+.character img {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.selected {
+    border: solid red 3px;
+}
+
+.heros {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:13px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.heros:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.heros:active {
+	position:relative;
+	top:1px;
+}
+
+.villains {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:13px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.villains:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.villains:active {
+	position:relative;
+	top:1px;
+}
+
+
+#announcements {
+	border: black 2px solid
+}
+
+#announcements span {
+	color: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%
+}
+
+body {
+	width: 960px;
+	background: lightsteelblue;
+	margin: 50px auto;
+}
+
+button {
+	background: #eee;
+	padding: 10px 25px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+#announcements{
+
+  width: 400px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+    display: none;
+}
